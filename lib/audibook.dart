@@ -22,8 +22,9 @@ class AudiBook extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Categoris"),
+                      Text("Categoris", style: TextStyle(fontSize: 20)),
                       TextButton.icon(
+                        style: TextButton.styleFrom(foregroundColor: Colors.indigoAccent),
                         onPressed: () {},
                         label: Text('See more'),
                       ),
@@ -32,13 +33,37 @@ class AudiBook extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Categoris"),
+                      Text(
+                        "Recommended For You",
+                        style: TextStyle(fontSize: 20),
+                      ),
                       TextButton.icon(
+                        style: TextButton.styleFrom(foregroundColor: Colors.indigoAccent),
                         onPressed: () {},
                         label: Text('See more'),
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Image(
+                    image: AssetImage('assets/images/List_ Recomended.png'),
+                  ),SizedBox(height: 20,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Best Seller",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                      TextButton.icon(
+                        style: TextButton.styleFrom(foregroundColor: Colors.indigoAccent),
+                        onPressed: () {},
+                        label: Text('See more'),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
