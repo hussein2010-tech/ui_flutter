@@ -14,7 +14,7 @@ class RunApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute:  MoodyUi.routName,
+      initialRoute:  AudiBook.routName,
       routes: {
         AudiBook.routName: (context) => AudiBook(),
         MoodyUi.routName: (context) => MoodyUi(),

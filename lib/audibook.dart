@@ -31,8 +31,9 @@ class AudiBook extends StatelessWidget {
                           Text("Categoris",
                               style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,))),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ))),
                           TextButton.icon(
                             style: TextButton.styleFrom(
                                 foregroundColor: Colors.indigoAccent),
@@ -47,7 +48,6 @@ class AudiBook extends StatelessWidget {
                           Container(
                             height: 50,
                             child: TabBar(
-
                               isScrollable: true,
                               tabs: [
                                 Tab(
@@ -80,11 +80,12 @@ class AudiBook extends StatelessWidget {
                         children: [
                           Text(
                             "Recommended For You",
-                            style:  GoogleFonts.poppins(
-                      textStyle: TextStyle(
-                      fontSize: 16,
-                        fontWeight: FontWeight.w500,)
-                          ),),
+                            style: GoogleFonts.poppins(
+                                textStyle: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            )),
+                          ),
                           TextButton.icon(
                             style: TextButton.styleFrom(
                                 foregroundColor: Colors.indigoAccent),
@@ -108,9 +109,11 @@ class AudiBook extends StatelessWidget {
                           Text(
                             "Best Seller",
                             style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,),),
+                              textStyle: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
                           ),
                           TextButton.icon(
                             style: TextButton.styleFrom(
@@ -136,8 +139,26 @@ class AudiBook extends StatelessWidget {
                                   fit: BoxFit.fill,
                                   height: 80,
                                   width: 150,
-                                ),SizedBox(width: 20,),
-                                Text('data')
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+                                Column(
+                                  children: [
+                                    Text(
+                                      'Light Mage',
+                                      style: GoogleFonts.poppins(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 16),
+                                    ),
+                                    Text(
+                                      'Laurie Forest',
+                                      style: GoogleFonts.poppins(
+                                          fontWeight: FontWeight.w400,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
                               ],
                             ),
                           ],
